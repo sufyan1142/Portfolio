@@ -15,6 +15,7 @@ Static portfolio site using a calm Fraunces + Sora font pair.
 - `assets/work-journal.png` - local site image
 - `favicon.svg` - browser icon
 - `netlify.toml` and `_headers` - Netlify/security header helpers
+- `package.json` - static build script for hosted deployment
 
 ## Preview
 
