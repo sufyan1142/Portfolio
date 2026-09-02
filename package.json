@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp -R index.html work.html about.html contact.html 404.html styles.css favicon.svg robots.txt _headers netlify.toml assets projects .openai dist/"
+    "build": "node build.mjs"
   }
 }
