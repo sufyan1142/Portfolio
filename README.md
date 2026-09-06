@@ -1,28 +1,41 @@
-# Sufyan Portfolio Site
+# M. Sufyan Ali — Portfolio
 
-Static portfolio site using a calm Fraunces + Sora font pair.
+A simple multi-page product-design portfolio built with plain HTML and CSS. It has no runtime dependencies and is ready for GitHub and Cloudflare Pages.
 
 ## Pages
 
-- `index.html` - home, current focus, featured work, notes
-- `work.html` - project index and notes
-- `about.html` - background, skills, values
-- `contact.html` - email and social links
-- `projects/deal-flow-redesign.html`
-- `projects/teams-archive-workbook.html`
-- `projects/case-study-writing-system.html`
-- `404.html` - static not-found page
-- `assets/work-journal.png` - local site image
-- `favicon.svg` - browser icon
-- `netlify.toml` and `_headers` - Netlify/security header helpers
-- `package.json` and `build.mjs` - static build script for hosted deployment
+- Home: positioning, selected work, and career impact
+- Work: project index and capabilities
+- About: profile, experience, education, and languages
+- Contact: email, LinkedIn, and résumé
+- Three project stories covering Daraz, NETSOL, and design-system work
 
-## Preview
+## Preview and build
 
-Open `index.html` directly in a browser. The site is static, self-contained, and does not need a build step.
+Open `index.html` directly for a quick preview.
 
-## Publish For Free
+For a production build:
 
-For fast testing, upload this entire folder to Netlify Drop. For a durable free portfolio URL, use GitHub Pages or Cloudflare Pages.
+```text
+npm run build
+```
 
-Before publishing widely, replace the email and social links with confirmed public details.
+The publish directory is `dist/client`.
+
+## Publish with GitHub + Cloudflare Pages
+
+1. Create a GitHub repository and push this folder.
+2. In Cloudflare, choose **Workers & Pages → Create → Pages → Connect to Git**.
+3. Choose the GitHub repository.
+4. Set the build command to `npm run build`.
+5. Set the output directory to `dist/client`.
+6. After deployment, add `sufyanali.pk` under **Custom domains**.
+7. Enable **Web Analytics** in the Cloudflare dashboard; Cloudflare can add the beacon without changing the site files.
+
+If the domain is registered outside Cloudflare, Cloudflare will show the exact DNS record required. If it is registered with Cloudflare, the DNS record is created automatically.
+
+## Public details
+
+- Email: Sufyan1142@gmail.com
+- LinkedIn: https://www.linkedin.com/in/muhammadsufyanali/
+- Canonical domain: https://sufyanali.pk
