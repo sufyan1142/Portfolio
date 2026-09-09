@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/cgi-sys/defaultwebpage.cgi",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/cgi-sys/:path*",
+      "destination": "/:path*",
+      "permanent": false
+    }
+  ]
+}
