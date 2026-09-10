@@ -240,12 +240,12 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-r
 .compact-subtitle { margin: 0 0 22px !important; color: var(--muted) !important; font-size: var(--text-sm) !important; }
 .compact-hero > p:last-child { max-width: 530px; margin: 0; color: #565651; font-size: var(--text-md); }
 .milestone-list { margin: 0 0 76px; padding: 0; list-style: none; }
-.milestone-list li { display: grid; grid-template-columns: 78px 1fr; gap: 13px; padding: 0 0 25px; }
+.milestone-list li { display: grid; grid-template-columns: 78px 42px minmax(0, 1fr); gap: 13px; align-items: start; padding: 0 0 30px; }
 .milestone-list time { padding-top: 2px; font-size: var(--text-xs); font-weight: 500; }
 .milestone-list h2 { margin: 0 0 7px; font-size: var(--text-md); font-weight: 500; line-height: 1.4; }
 .milestone-list p { margin: 0 0 5px; color: #555550; font-size: var(--text-sm); line-height: 1.55; }
-.milestone-mark { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 5px; border-radius: 6px; background: var(--panel); font-size: .75rem; font-weight: 600; vertical-align: -4px; }
-.milestone-mark img { width: 15px; height: 15px; object-fit: contain; filter: grayscale(1); opacity: .52; transition: filter 180ms ease, opacity 180ms ease; }
+.milestone-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; background: var(--panel); font-size: var(--text-sm); font-weight: 600; }
+.milestone-mark img { width: 30px; height: 30px; object-fit: contain; filter: grayscale(1); opacity: .45; transition: filter 180ms ease, opacity 180ms ease; }
 .milestone-list li:hover .milestone-mark img { filter: grayscale(0); opacity: 1; }
 .mark-n { background: var(--blue); color: #24408d; }
 .mark-s { background: #202020; color: white; }
@@ -325,6 +325,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-r
   .hero-intro { grid-template-columns: 82px 1fr; gap: 17px; }
   .portrait-mark { width: 82px; height: 82px; }
   .timeline li { grid-template-columns: 82px 1fr; gap: 12px; }
+  .milestone-list li { grid-template-columns: 68px 40px minmax(0, 1fr); gap: 10px; }
+  .milestone-mark { width: 40px; height: 40px; }
   .timeline li > p:last-child { grid-column: 2; }
   .two-column, .case-section, .statement { grid-template-columns: 1fr; gap: 15px; }
   .section-heading { display: block; }
